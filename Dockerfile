@@ -2,13 +2,11 @@ FROM node:20-alpine
 
 WORKDIR /app
 
-# Copy dependency files from nextjs folder
-COPY nextjs/package.json nextjs/package-lock.json ./
+COPY nextjs/package.json ./
 
-# Install dependencies
-RUN npm ci
+# If lock file exists, use ci; otherwise fallback
+RUN if [ -f package-lock.json ]; then npm ci; else npm install; fi
 
-# Copy full app
 COPY nextjs/ ./
 
 RUN npm run build
