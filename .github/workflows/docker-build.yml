@@ -5,6 +5,7 @@ on:
     branches: [ "main" ]
     paths:
       - "nextjs/**"
+      - "Dockerfile"
       - ".github/workflows/docker-build.yml"
   pull_request:
     branches: [ "main" ]
@@ -33,8 +34,8 @@ jobs:
       - name: Build and Push Docker Image
         uses: docker/build-push-action@v5
         with:
-          context: ./nextjs
-          file: ./nextjs/Dockerfile
+          context: .
+          file: ./Dockerfile
           push: ${{ github.event_name != 'pull_request' }}
           tags: |
             ${{ secrets.DOCKER_USERNAME }}/${{ env.IMAGE_NAME }}:latest
