@@ -11,7 +11,7 @@ on:
     branches: [ "main" ]
 
 env:
-  IMAGE_NAME: crypgo-app
+  IMAGE_NAME: crypgo-landingpage
 
 jobs:
   build:
