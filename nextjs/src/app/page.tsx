@@ -11,7 +11,7 @@ import GlobalReach from '@/components/Home/GlobalReach'
 import Faq from '@/components/Home/Faq'
 
 export const metadata: Metadata = {
-  title: 'CrypGo',
+  title: 'Crypterio',
 }
 
 export default function Home() {
