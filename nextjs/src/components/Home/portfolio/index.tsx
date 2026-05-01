@@ -26,9 +26,7 @@ const Portfolio = () => {
             initial={{ y: '100%', opacity: 0 }}
             transition={{ duration: 0.6 }}>
             <div className='flex flex-col gap-4'>
-              <p className='text-white font-medium'>
-                Crypto landing page <span className='text-primary'>template</span>
-              </p>
+        
               <h2 className='text-white sm:text-5xl text-3xl mb-4 font-medium'>
                 Create your cryptocurrency portfolio today
               </h2>
