@@ -5,7 +5,7 @@ metadata:
   labels:
     app: crypto-landingpage
 spec:
-  replicas: 3
+  replicas: 2
   strategy:
     type: RollingUpdate
     rollingUpdate:
