@@ -107,9 +107,8 @@ const Footer: FC = () => {
             target="_blank"
             href={"https://crypterio.co/"}
           >
-            crypterio.co
+            crypterio.co | Yevgeni Shapiro
           </Link>
-          | Yevgeni Shapiro
         </p>
       </div>
     </footer>
