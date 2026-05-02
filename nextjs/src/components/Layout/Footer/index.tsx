@@ -27,9 +27,9 @@ const Footer: FC = () => {
                   className="text-white group-hover:text-primary"
                 />
               </Link>
-              <Link href="https://www.instagram.com/" className="group">
+              <Link href="https://www.linkedin.com/" className="group">
                 <Icon
-                  icon="fa6-brands:instagram"
+                  icon="fa6-brands:linkedin"
                   width="24"
                   height="24"
                   className="text-white group-hover:text-primary"
