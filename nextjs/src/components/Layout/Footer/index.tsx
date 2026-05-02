@@ -101,7 +101,7 @@ const Footer: FC = () => {
         </div>
         <Separator className="bg-white/10" />
         <p className="text-white/40 text-center py-8">
-          Designed by Yevgeni Shapiro {" "}
+          Designed by  {" "}
           <Link
             className="hover:text-primary"
             target="_blank"
@@ -109,6 +109,7 @@ const Footer: FC = () => {
           >
             crypterio.co
           </Link>
+          | Yevgeni Shapiro
         </p>
       </div>
     </footer>
